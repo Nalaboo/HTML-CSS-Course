@@ -1,0 +1,81 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Ejercicio1</title>
+          <style type="text/css">
+        	body,html{
+				height: 100%;
+				padding: 0; 
+				margin: 0;
+			}
+			#hola{
+				position: absolute;
+				top:10%;
+				left:10%;
+			}
+          	#rojo{
+          	  width: 50px;
+              height:50px;
+              background:red;
+              position:relative;
+			  float: left ;   
+          	}
+
+          	#amarillo{
+          	  width: 50px;
+              height:50px;
+              background:yellow;
+              position:relative;
+			        float: left ;
+          	}
+
+          	#azul{
+          	  width: 50px;
+              height:50px;
+              background:blue;
+              position:relative;
+			        float: left ;
+          	}
+
+          	#verde{
+          	  width: 50px;
+              height:50px;
+              background:green;
+              position:relative;
+			        float: left ;
+          	}
+
+             </style>
+          <script type="text/javascript">
+          		function cambiarojo(){
+          			document.getElementById("hola").style.background="red";
+          		}
+          		function cambiazul(){
+          			document.getElementById("hola").style.background="blue";
+          		}
+          		function cambiamarillo(){
+          			document.getElementById("hola").style.background="yellow";
+          		}
+          		function cambiaverde(){
+          			document.getElementById("hola").style.background="green";
+          		}
+
+          	function primero(){
+          		document.getElementById("rojo").addEventListener("mouseover", cambiarojo);
+          		document.getElementById("amarillo").addEventListener("mouseover", cambiamarillo);
+          		document.getElementById("azul").addEventListener("mouseover", cambiazul);
+          		document.getElementById("verde").addEventListener("mouseover", cambiaverde);
+          	}
+			window.onload=primero;          	
+          </script>
+      </head>
+
+          <body id="hola">
+          		<div id="rojo"> </div>
+				      <div id="amarillo"> </div>
+				      <div id="azul"> </div>
+				      <div id="verde"> </div>
+          </body>
+     </html>
